@@ -2,17 +2,24 @@ body {
     margin: 0;
 }
 
-h1 {
+h1, h2, h3 {
     font-size: 200%;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
     background: darkgray;
     padding: 10px 15px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    flex-flow: row wrap;
     align-items: center;
 }
 
@@ -20,10 +27,13 @@ header h1 {
     display: inline-block;
 }
 
-header h1 span {
+header span {
+    font-family: 'Montserrat', sans-serif;
     font-style: italic;
-    font-size: 60%;
+    font-size: 120%;
+    margin:0 auto 0 10px;
 }
+
 
 .nav-menu {
     margin-right: 10px;
@@ -34,9 +44,10 @@ header h1 span {
 }
 
 .nav-menu a {
+    font-family: 'Montserrat', sans-serif;
     color: #551a8b;
     font-size: 110%;
-    padding: 5px 10px;
+    padding: 5px 7px;
     border-radius: 5px;
     margin: 0;
     background: slategray;
@@ -85,22 +96,27 @@ section h2 {
 
 .card .title {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin: 10px 0;
 }
 
 .card .title h2 {
-    margin: 0;
+    margin: 0 15px 0 0;
 }
 
 .card .title span {
+    font-family: 'Montserrat', sans-serif;
     color: black;
     font-style: italic;
     font-weight: bold;
     word-spacing: 10px;
     font-size: 120%;
+}
+
+.card.profile-card .title span {
+    word-spacing: 0;
 }
 
 .card .content {
@@ -111,6 +127,8 @@ section h2 {
 }
 
 .card .content p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
     padding: 10px;
     text-align: justify;
     margin: 0;
@@ -129,6 +147,7 @@ section h2 {
 }
 
 footer {
+    font-family: 'Lato', sans-serif;
     background: darkgray;
     padding: 5px;
     margin: 0;
@@ -136,6 +155,12 @@ footer {
     text-align: center;
     position: relative;
     bottom: 0;
+}
+
+@media screen and (max-width: 740px) {
+    header div {
+        flex-flow: column nowrap;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -156,7 +181,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 590px) {
     header {
         padding: 10px;
         display: flex;
@@ -168,10 +193,9 @@ footer {
     header h1 {
         margin: 0 0 10px 0;
     }
-
-    header h1 span {
-        font-style: italic;
-        font-size: 60%;
+    
+    header span {
+        margin: 0 0 10px 0;
     }
 
     .nav-menu {
@@ -190,3 +214,4 @@ footer {
         border-bottom: 1px solid #551a8b;
     }
 }
+

@@ -6,25 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Developer portfolio</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Toni Seppäläinen<span> - Developer portfolio</span></h1>
+        <div>
+            <h1>Toni Seppäläinen</h1>
+            <span> - Developer Portfolio -</span>
+        </div>
+        
         <nav class="nav-menu">
             <ul>
-                <a href="#aboutme" class="nav-link">About me</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a class="nav-link" onclick="document.querySelector('#projects').scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth' });" >Projects</a>
+                <a class="nav-link" onclick="document.querySelector('#aboutme').scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth' });">About Me</a>
             </ul>
         </nav>
     </header>
     
     <section id="projects-section">
         <h2><a id="projects">Projects</a></h2>
+        <hr>
         
         <div class="card">
             <div class="title">
-                <h2>Regal Rest</h2>
+                <h3>Regal Rest</h3>
                 <span>libGDX Android Java</span>
             </div>
             <div class="content">
@@ -38,7 +43,7 @@
 
         <div class="card">
             <div class="title">
-                <h2>ZenSudoku</h2>
+                <h3>ZenSudoku</h3>
                 <span>Android Java</span>
             </div>
             <div class="content">
@@ -47,11 +52,28 @@
                 </p>
                 <img src="zensudoku.png" alt="Play view of the game Zen Sudoku">
             </div>
-        </div>
-
+        </div>  
         
     </section>
+    <section>
+        <h2><a id="aboutme">About Me</a></h2>
+        <div class="card profile-card">
+            <div class="title">
+                <h3>Toni Seppäläinen</h3>
+                <span>Full Stack Developer / Designer</span>
+            </div>
+            <div class="content">
+                <p>
+                    I am a developer who likes to build things with awesome people.
+                </p>
+                <img src="lake.jpg" alt="Play view of the game Zen Sudoku">
+            </div>
+        </div>
+    </section>
 
-    <footer>Copyright © Toni Seppäläinen 2017</footer>
+    <footer>
+        <p>Copyright © Toni Seppäläinen 2017</p>
+        <p>Contact me: toni.seppalainen@gmail.com</p>
+    </footer>
 </body>
 </html>
