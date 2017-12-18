@@ -9,8 +9,10 @@ h1, h2, h3 {
 }
 
 header {
-    background: darkgray;
-    padding: 10px 15px;
+    background: #7478FF;
+    /* background: #9B74FF; */
+    padding: 30px 15px;
+    margin-bottom: 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -45,12 +47,13 @@ header span {
 
 .nav-menu a {
     font-family: 'Montserrat', sans-serif;
-    color: #551a8b;
+    color: white;
     font-size: 110%;
     padding: 5px 7px;
     border-radius: 5px;
     margin: 0;
-    background: slategray;
+    background: #3C3D5C;
+    /* background: #593FB2; */
     text-decoration: none;
 }
 
@@ -71,7 +74,14 @@ section {
 
 section h2 {
     display: inline-block;
-    margin: 0 auto;
+    margin: 20px auto;
+}
+
+hr {
+    background: #3C3D5C;
+    border: 0;
+    height: 2px;
+    margin: 30px 0;
 }
 
 .card {
@@ -81,17 +91,10 @@ section h2 {
     margin: 5px auto;
     margin-bottom: 20px;
     border-radius: 10px;
-    padding: 0 10px;
+    padding: 0 20px;
     padding-bottom: 20px;
     box-shadow: 5px 5px 25px;
-}
-
-.card:nth-child(odd) {
-    background: lightgray;
-}
-
-.card:nth-child(even) {
-    background: slategray;
+    background: #bdbfFF;
 }
 
 .card .title {
@@ -132,7 +135,7 @@ section h2 {
     text-align: justify;
     margin: 0;
     margin-right: 10px;
-    background: #dddddd;
+    background: #eeeeee;
     border-radius: 5px;
 }
 .card .content p {
@@ -146,7 +149,8 @@ section h2 {
     flex: 1 1 auto;
     width: 50%;
     max-width: 650px;
-    border: 3px solid #5555AA;
+    /* border: 3px solid #5555AA; */
+    border: 3px solid #3C3D5C;
     border-radius: 5px; 
 }
 
