@@ -33,7 +33,7 @@ header span {
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-size: 120%;
-    margin:0 auto 0 10px;
+    margin:0 auto 0 20px;
 }
 
 
@@ -143,6 +143,31 @@ hr {
     font-size: 18px;
     padding: 10px;
     margin: 0;
+}
+
+.card .content .tech-column {
+    align-self: stretch;
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 0;
+    margin-right: 10px;
+    padding: 10px;
+    background: #eeeeee;
+    border-radius: 5px;
+}
+
+.card .content .tech-column h4 {
+    font-size: 125%;
+    margin: 0;
+    border-bottom: 1px solid #3C3D5C;
+}
+
+.card .content .tech-column p {
+    color: #B2992D;
+    font-size: 125%;
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .card .content img {   
