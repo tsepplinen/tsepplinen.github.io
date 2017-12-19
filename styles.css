@@ -12,7 +12,6 @@ header {
     background: #7478FF;
     /* background: #9B74FF; */
     padding: 30px 15px;
-    margin-bottom: 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -55,6 +54,7 @@ header span {
     background: #3C3D5C;
     /* background: #593FB2; */
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nav-menu a:active {
@@ -69,7 +69,9 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5px;
+    padding: 0 5px 55px 5px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 section h2 {
@@ -81,7 +83,11 @@ hr {
     background: #3C3D5C;
     border: 0;
     height: 2px;
-    margin: 30px 0;
+    margin: 0 0;
+}
+
+.golden {
+    color: #B2992D;
 }
 
 .card {
@@ -89,7 +95,7 @@ hr {
     min-width: 80%;
     max-width: 80%;
     margin: 5px auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-radius: 10px;
     padding: 0 20px;
     padding-bottom: 20px;
@@ -135,7 +141,7 @@ hr {
     text-align: justify;
     margin: 0;
     margin-right: 10px;
-    background: #eeeeee;
+    background: #FFFFFF;
     border-radius: 5px;
 }
 .card .content p {
@@ -195,6 +201,24 @@ footer {
     position: relative;
     bottom: 0;
 }
+
+/*
+@media screen and (min-width: 1600px) {
+    section {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    section h2 {
+        width: 100%;
+    }
+    
+    .card {
+        width: 40%;
+        min-width: initial;
+    }
+}
+*/
 
 @media screen and (max-width: 740px) {
     header div {
