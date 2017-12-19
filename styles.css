@@ -176,7 +176,7 @@ hr {
     font-style: italic;
 }
 
-.card .content img {   
+.card .content .feature-image {   
     flex: 1 1 auto;
     width: 50%;
     max-width: 650px;
@@ -187,8 +187,9 @@ hr {
 
 .card .content .description img {
     flex: 0;
-    width: 30%;
     border: none;
+    width: 240px;
+    height: 100px;
 }
 
 footer {
@@ -239,8 +240,12 @@ footer {
         order: 1;
         margin: 10px 0 0 0;
     }
-    .card .content img {   
+    .card .content .feature-image {   
         width: 99%;
+    }
+    
+    .card .content .description .play-link {
+        text-align: center;
     }
 }
 
